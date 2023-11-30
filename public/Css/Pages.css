@@ -100,9 +100,14 @@
 
 
 .list-logo{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     background-color: #F8F8F8;
 }
 .list-logo .content{
+    width: 100%;
+    max-width: 1450px;
     display: flex;
     flex-wrap: wrap;
 }
