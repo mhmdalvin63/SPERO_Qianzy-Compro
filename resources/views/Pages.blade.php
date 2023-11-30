@@ -38,7 +38,7 @@
 
    {{-- CONTENT --}}
    <div class="header" id="header">
-    <img src="{{ asset('..\images\banner-background.png') }}" alt="" class="banner-header">
+    <img src="{{ asset('..\Images\banner-background.png') }}" alt="" class="banner-header">
     <div class="banner-desc">
         <p class="md">All About</p>
         <h1>PT. Qianzy Kreatif <br> Mediatama</h1>
