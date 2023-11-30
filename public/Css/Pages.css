@@ -20,6 +20,35 @@
     bottom: 35%;
     left: 10%;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .banner-header{
+        height: 35vh;
+    }
+    .banner-desc{
+        bottom: 70%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .banner-header{
+        height: 50vh;
+    }
+    .banner-desc{
+        bottom: 55%;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .banner-header{
+        height: 75vh;
+    }
+    .banner-desc{
+        bottom: 35%;
+    }
+}
+
 
 
 
