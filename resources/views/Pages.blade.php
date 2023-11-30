@@ -6,6 +6,7 @@
     <title>Qianzy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/Pages.css">
+    <link rel="stylesheet" href="../Css/Font.css">
   </head>
   <body>
    {{-- NAVBAR --}}
@@ -39,8 +40,8 @@
    <div class="header" id="header">
     <img src="{{ asset('..\images\banner-background.png') }}" alt="" class="banner-header">
     <div class="banner-desc">
-        <p>All About</p>
-        <h2>PT. Qianzy Kreatif Mediatama</h2>
+        <p class="md">All About</p>
+        <h1>PT. Qianzy Kreatif <br> Mediatama</h1>
     </div>
    </div>
 
@@ -51,9 +52,10 @@
                 <img src="{{ asset('..\Images\image-about-us.png') }}" alt="" class="image-about-us"> 
             </div>
             <div class="col-lg-6 col-12">
-                <div class="title-about-us gap-3">
-                    <p>OURSTORY</p>
-                    <hr class="hr-1">
+                <div class="title-about-us d-lg-flex d-block justify-content-lg-start justify-content-center gap-3">
+                    <p class="md mt-4 mt-lg-0 text-lg-start text-center ">OURSTORY</p>
+                    <hr class="cy d-lg-none d-block">
+                    <hr class="hr-1 d-lg-block d-none">
                 </div>
                 <h2 class="fw-bold about-text">ABOUT QIANZY</h2>
                 <p class="my-2">Semakin berkembangnya dunia usaha dibidang Event Organizer, membuat setiap perusahaan bersaing untuk menjadi yang terbaik.</p>
@@ -66,17 +68,17 @@
    <div class="visi-misi my-5 py-5">
     <div class="container">
         <div class="row">
-            <div class="col-6 px-5">
+            <div class="col-lg-6 col-12 px-5">
                 <div class="visi mb-3 gap-2">
                     <img src="{{ asset('../Images/logo-visi.png') }}" alt="">
-                    <p class="fw-bold">Visi</p>
+                    <h5 class="fw-bold">Visi</h5>
                 </div>
                 <p>Menjadi Event Organizer yang selalu berusaha untuk memberikan solusi ide - ide kreatif, konsep inovatif, dan bekerja profesional terhadap segala jenis kegiatan yang akan dilaksankan oleh berbagai pihak yang tertarik untuk bekerja sama dengan <span class="fw-bold">QIANZY KREATIF MEDIATAMA</span>. Di kota Jakarta dan sekitarnya secara lebih luas.</p>
             </div>
-            <div class="col-6 px-5">
+            <div class="col-lg-6 mt-lg-0 mt-5 col-12 px-5">
                 <div class="visi mb-3 gap-2">
                     <img src="{{ asset('../Images/logo-visi.png') }}" alt="">
-                    <p class="fw-bold">Misi</p>
+                    <h5 class="fw-bold">Misi</h5>
                 </div>
                 <p>Menjadi Partner yang memberikan solusi dan kenyamanan sehingga bisa bersinergi untuk kesuksesan kegiatan acara.</p>
             </div>
@@ -86,11 +88,11 @@
 
    <div class="what-we-do my-5">
     <div class="container">
-        <h3>WHAT WE DO</h3>
+        <h3 class="cy">WHAT WE DO</h3>
         <p>PT. Qianzy Kreatif Mediatama</p>
 
         <div class="row mt-5">
-            <div class="col-3 my-2" id="col-what-we-do">
+            <div class="col-xl-3 col-md-4 col-6 my-2" id="col-what-we-do">
                 <div class="content py-4 px-3">
                     <div class="content-top py-3 px-4">
                         <img src="{{ asset('../Images/corporate.png') }}" alt="">
@@ -101,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 my-2" id="col-what-we-do">
+            <div class="col-xl-3 col-md-4 col-6 my-2" id="col-what-we-do">
                 <div class="content p-4 px-3">
                     <div class="content-top py-3 px-4">
                         <img src="{{ asset('../Images/corporate.png') }}" alt="">
@@ -112,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 my-2" id="col-what-we-do">
+            <div class="col-xl-3 col-md-4 col-6 my-2" id="col-what-we-do">
                 <div class="content p-4 px-3">
                     <div class="content-top py-3 px-4">
                         <img src="{{ asset('../Images/corporate.png') }}" alt="">
@@ -123,51 +125,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 my-2" id="col-what-we-do">
-                <div class="content p-4 px-3">
-                    <div class="content-top py-3 px-4">
-                        <img src="{{ asset('../Images/corporate.png') }}" alt="">
-                    </div>
-                    <div class="content-bottom mt-4">
-                        <p class="fw-bold">Corporate Event</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, ad.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 my-2" id="col-what-we-do">
-                <div class="content p-4 px-3">
-                    <div class="content-top py-3 px-4">
-                        <img src="{{ asset('../Images/corporate.png') }}" alt="">
-                    </div>
-                    <div class="content-bottom mt-4">
-                        <p class="fw-bold">Corporate Event</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, ad.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 my-2" id="col-what-we-do">
-                <div class="content p-4 px-3">
-                    <div class="content-top py-3 px-4">
-                        <img src="{{ asset('../Images/corporate.png') }}" alt="">
-                    </div>
-                    <div class="content-bottom mt-4">
-                        <p class="fw-bold">Corporate Event</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, ad.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 my-2" id="col-what-we-do">
-                <div class="content p-4 px-3">
-                    <div class="content-top py-3 px-4">
-                        <img src="{{ asset('../Images/corporate.png') }}" alt="">
-                    </div>
-                    <div class="content-bottom mt-4">
-                        <p class="fw-bold">Corporate Event</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, ad.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 my-2" id="col-what-we-do">
+            <div class="col-xl-3 col-md-4 col-6 my-2" id="col-what-we-do">
                 <div class="content p-4 px-3">
                     <div class="content-top py-3 px-4">
                         <img src="{{ asset('../Images/corporate.png') }}" alt="">
@@ -183,7 +141,7 @@
    </div>
 
    <div class="list-logo p-5" id="project">
-    <div class="content">
+    <div class="content justify-content-md-between justify-content-center">
         <img src="{{ asset('../Images/dpr.png') }}" alt="">
         <img src="{{ asset('../Images/dpr.png') }}" alt="">
         <img src="{{ asset('../Images/dpr.png') }}" alt="">
@@ -196,13 +154,52 @@
 
 
     <div class="container events my-5" id="event">
-        <h3>EVENT</h3>
+        <h3 class="cy">EVENT</h3>
         <div class="d-flex justify-content-between">
             <p>by PT. Qianzy Kreatif Mediatama</p>
             <a class="text-decoration-none text-black" href="">Selengkapnya >></a>
         </div>
-        <div class="row ">
-            <div class="col-xl-4 col-lg-6 col-12 mt-4 event-img" id="gallery-img">
+        <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-xl-4 col-md-6 col-sm-10 col-12 mt-4 event-img" id="gallery-img">
+                <div class="content position-relative">
+                    <img src="{{ asset('..\Images\event=img.png') }}" class="position-relative" alt="">
+                    <div class="event-title px-3">
+                        <p>
+                            <span class="fw-bold">Kegiatan 1</span>
+                            <br>
+                            <span>Lorem Ipsum</span>
+                        </p>
+                        <a href=""><p>Selengkapnya</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-10 col-12 mt-4 event-img" id="gallery-img">
+                <div class="content position-relative">
+                    <img src="{{ asset('..\Images\event=img.png') }}" class="position-relative" alt="">
+                    <div class="event-title px-3">
+                        <p>
+                            <span class="fw-bold">Kegiatan 1</span>
+                            <br>
+                            <span>Lorem Ipsum</span>
+                        </p>
+                        <a href=""><p>Selengkapnya</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-10 col-12 mt-4 event-img" id="gallery-img">
+                <div class="content position-relative">
+                    <img src="{{ asset('..\Images\event=img.png') }}" class="position-relative" alt="">
+                    <div class="event-title px-3">
+                        <p>
+                            <span class="fw-bold">Kegiatan 1</span>
+                            <br>
+                            <span>Lorem Ipsum</span>
+                        </p>
+                        <a href=""><p>Selengkapnya</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-10 col-12 mt-4 event-img" id="gallery-img">
                 <div class="content position-relative">
                     <img src="{{ asset('..\Images\event=img.png') }}" class="position-relative" alt="">
                     <div class="event-title px-3">
