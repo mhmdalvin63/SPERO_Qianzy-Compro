@@ -12,28 +12,28 @@
    {{-- NAVBAR --}}
    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar-utama">
     <div class="container">
-      <a class="navbar-brand" href="#">LOGO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="ms-auto gap-3 navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#header">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#project">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#event">Event</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="ms-auto gap-3 navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#header">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutus">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#event">Event</a>
+                </li>
+            </ul>
+        </div>
     </div>
-   </nav>    
+</nav>
    {{-- ALHIR NAVBAR --}}
 
    {{-- CONTENT --}}
@@ -267,7 +267,26 @@
     </footer>
    {{-- AKHIR FOOTER --}}
 
-   <script src="https://kit.fontawesome.com/8def9595b8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8def9595b8.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    document.querySelectorAll('.navbar-nav a').forEach(function(element) {
+        element.addEventListener('click', function() {
+            // Remove 'nav-active' class from all nav items
+            document.querySelectorAll('.navbar-nav .nav-item').forEach(function(item) {
+                item.classList.remove('nav-active');
+            });
+
+            // Add 'nav-active' class to the clicked nav item
+            this.closest('.nav-item').classList.add('nav-active');
+        });
+    });
+</script>
+
   </body>
 </html>

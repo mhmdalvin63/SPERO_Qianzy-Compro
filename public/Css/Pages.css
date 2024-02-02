@@ -5,6 +5,10 @@
     width: 100%;
     z-index: 99;
 }
+.nav-active{
+    color: blue !important;
+    font-weight: bold;
+}
 
 
 .banner-header{
