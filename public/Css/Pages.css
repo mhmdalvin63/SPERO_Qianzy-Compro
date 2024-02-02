@@ -102,7 +102,7 @@
 .list-logo{
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     background-color: #F8F8F8;
 }
 .list-logo .content{

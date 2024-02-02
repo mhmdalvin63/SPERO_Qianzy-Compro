@@ -236,14 +236,14 @@
                         <a href=""><i class="fa-solid fa-circle-play" style="color: #ffffff;"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-8 col-7">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-5">
                     <p class="xl fw-bold my-2">MENU</p>
                     <a class="d-block text-decoration-none text-white" href="">Home</a>
                     <a class="d-block text-decoration-none text-white" href="">About Us</a>
                     <a class="d-block text-decoration-none text-white" href="">Project</a>
                     <a class="d-block text-decoration-none text-white" href="">Event</a>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-5">
+                <div class="col-lg-3 col-md-3 col-sm-8 col-7">
                     <p class="xl fw-bold mt-2">Addres & Contact</p>
                     <div class="email d-flex align-items-start gap-2 mt-2">
                         <i class="fa-solid fa-location-dot mt-1" style="color: #ffffff;"></i>
@@ -258,6 +258,7 @@
                 </div>
             </div>
             <div class="hr"></div>
+            <hr />
             <div class="bottomFooter d-flex justify-content-between">
                 <p>©2020 PT Qianzy Kreatif Mediatama, All Rights Reserved.</p>
                 <p>Terms & Condition - Privacy - Cookies</p>
