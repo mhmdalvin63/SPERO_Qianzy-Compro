@@ -266,6 +266,12 @@
                 </i> <span>Event</span>
               </a>
             </li>
+            <li>
+              <a class="nav-link {{ Request::segment(1) === 'wedo' ? 'sideactive' : null }}" href="{{ url('wedo' )}}">
+                <i class="fas fa-pencil-ruler">
+                </i> <span>wedo</span>
+              </a>
+            </li>
           </ul>
 
           <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
