@@ -243,9 +243,13 @@
                 <i class="fas fa-cog"></i> Settings
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item has-icon text-danger">
-                <i class="fas fa-sign-out-alt"></i> Logout
-              </a>
+              @if(Auth::check())
+                  <form method="POST" action="{{ route('logout') }}">
+                      @csrf
+                      <button type="submit"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                  </form>
+              @endif
+
             </div>
           </li>
         </ul>
@@ -270,6 +274,12 @@
               <a class="nav-link {{ Request::segment(1) === 'wedo' ? 'sideactive' : null }}" href="{{ url('wedo' )}}">
                 <i class="fas fa-pencil-ruler">
                 </i> <span>wedo</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link {{ Request::segment(1) === 'partner' ? 'sideactive' : null }}" href="{{ url('partner' )}}">
+                <i class="fas fa-pencil-ruler">
+                </i> <span>partner</span>
               </a>
             </li>
           </ul>
