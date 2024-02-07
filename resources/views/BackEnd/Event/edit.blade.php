@@ -5,7 +5,7 @@
 <div class="card">
     <div class="card-body">
         <img src="{{asset('storage/image/'.$Event->gambar_event)}}" alt="" width="100">
-        <form action="{{ route('event_update', $Event->id) }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('admin.event_update', $Event->id) }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             @method('PUT')
             <div class="form-group mt-5">
@@ -26,7 +26,7 @@
                 <label for="floatingTextarea">Deskripsi Artikel :</label>
                 <textarea class="form-control" placeholder="Masukkan Deskripsi Artikel" id="floatingTextarea" name="deskripsi_event" >{{ $Event->deskripsi_event}}</textarea>
               </div>
-              <a href="{{ route('event_index') }}" class="btn btn-outline-warning btn-icon-text">                                                  
+              <a href="{{ route('admin.event_index') }}" class="btn btn-outline-warning btn-icon-text">                                                  
                 Cancel
               </a>
             <button class="btn btn-outline-primary" type="submit">Submit</button>

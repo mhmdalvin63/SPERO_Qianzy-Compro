@@ -7,7 +7,7 @@
         <div class="card">
             <div class="card-body p-5">
                 <h4 class="card-title">Form event</h4>
-                <form action="{{ route('wedo_store') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('admin.wedo_store') }}" method="post" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     {{-- <div class="form-group mt-5">
                         <label for="formFile" class="form-label">Pilih Gambar event</label>
@@ -29,7 +29,7 @@
                         <label for="floatingTextarea" ></label>
                       </div>
                     <div class="modal-footer">
-                        <a href="{{ route('wedo_index') }}" class="btn btn-outline-warning btn-icon-text">
+                        <a href="{{ route('admin.wedo_index') }}" class="btn btn-outline-warning btn-icon-text">
                             Cancel
                         </a>
                         <button type="submit" class="btn btn-outline-primary btn-icon-text">

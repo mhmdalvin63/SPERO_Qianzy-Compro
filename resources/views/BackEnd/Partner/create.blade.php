@@ -7,14 +7,14 @@
         <div class="card">
             <div class="card-body p-5">
                 <h4 class="card-title">Form partner</h4>
-                <form action="{{ route('partner_store') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('admin.partner_store') }}" method="post" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="form-group mt-5">
                         <label for="formFile" class="form-label">Pilih Gambar partner</label>
                         <input class="form-control" type="file" id="formFile" name="gambar_partner">
                       </div>
                     <div class="modal-footer">
-                        <a href="{{ route('partner_index') }}" class="btn btn-outline-warning btn-icon-text">
+                        <a href="{{ route('admin.partner_index') }}" class="btn btn-outline-warning btn-icon-text">
                             Cancel
                         </a>
                         <button type="submit" class="btn btn-outline-primary btn-icon-text">

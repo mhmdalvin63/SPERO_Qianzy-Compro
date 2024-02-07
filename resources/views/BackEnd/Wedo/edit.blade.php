@@ -5,7 +5,7 @@
 <div class="card">
     <div class="card-body">
         {{-- <img src="{{asset('storage/image/'.$Wedo->gambar_wedo)}}" alt="" width="100"> --}}
-        <form action="{{ route('wedo_update', $Wedo->id) }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('admin.wedo_update', $Wedo->id) }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             @method('PUT')
             {{-- <div class="form-group mt-5">
@@ -26,7 +26,7 @@
                 <label for="floatingTextarea">Deskripsi Artikel :</label>
                 <textarea class="form-control" placeholder="Masukkan Deskripsi Artikel" id="floatingTextarea" name="deskripsi_wedo" >{{ $Wedo->deskripsi_wedo}}</textarea>
               </div>
-              <a href="{{ route('wedo_index') }}" class="btn btn-outline-warning btn-icon-text">                                                  
+              <a href="{{ route('admin.wedo_index') }}" class="btn btn-outline-warning btn-icon-text">                                                  
                 Cancel
               </a>
             <button class="btn btn-outline-primary" type="submit">Submit</button>

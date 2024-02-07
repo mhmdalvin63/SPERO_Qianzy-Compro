@@ -265,19 +265,19 @@
           <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li>
-              <a class="nav-link {{ Request::segment(1) === 'event' ? 'sideactive' : null }}" href="{{ url('event' )}}">
+              <a class="nav-link {{ Request::segment(1) === 'admin/event' ? 'sideactive' : null }}" href="{{ url('admin/event' )}}">
                 <i class="fas fa-pencil-ruler">
                 </i> <span>Event</span>
               </a>
             </li>
             <li>
-              <a class="nav-link {{ Request::segment(1) === 'wedo' ? 'sideactive' : null }}" href="{{ url('wedo' )}}">
+              <a class="nav-link {{ Request::segment(1) === 'admin/wedo' ? 'sideactive' : null }}" href="{{ url('admin/wedo' )}}">
                 <i class="fas fa-pencil-ruler">
                 </i> <span>wedo</span>
               </a>
             </li>
             <li>
-              <a class="nav-link {{ Request::segment(1) === 'partner' ? 'sideactive' : null }}" href="{{ url('partner' )}}">
+              <a class="nav-link {{ Request::segment(1) === 'admin/partner' ? 'sideactive' : null }}" href="{{ url('admin/partner' )}}">
                 <i class="fas fa-pencil-ruler">
                 </i> <span>partner</span>
               </a>

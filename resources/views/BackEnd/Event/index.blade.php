@@ -7,7 +7,7 @@
         <div class="card-body">
             {{-- @if(auth()->user()->level == "admin") --}}
             <div class="card-title d-flex justify-content-end mb-5">
-                <a href="{{ route('event_create') }}" class="btn btn-primary btn-icon-text">
+                <a href="{{ route('admin.event_create') }}" class="btn btn-primary btn-icon-text">
                     <i class="mdi mdi-upload btn-icon-prepend"></i>
                     Upload
                 </a>
@@ -46,11 +46,11 @@
                                 btn-icon-text">
                                 Lihat
                                 </a> --}}
-                                <a href="{{ route('event_edit', $item->id )}}"
+                                <a href="{{ route('admin.event_edit', $item->id )}}"
                                     class="btn btn-outline-success btn-icon-text">
                                     Edit
                                 </a>
-                                <form action="{{ route('event_delete', $item->id) }}" method="POST">
+                                <form action="{{ route('admin.event_delete', $item->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-outline-danger btn-icon-text">Hapus</button>
