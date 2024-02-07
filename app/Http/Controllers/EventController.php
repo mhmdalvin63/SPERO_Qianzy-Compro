@@ -48,7 +48,7 @@ class EventController extends Controller
             'deskripsi_event' => $request->deskripsi_event,
         ]);
         // event::create($request->all());
-        return redirect('/event')->with('success','Data Pemesanan Berhasil Di Tambahkan');
+        return redirect('admin/event')->with('success','Data Pemesanan Berhasil Di Tambahkan');
     }
 
     /**
@@ -101,7 +101,7 @@ class EventController extends Controller
                 'deskripsi_event' => $request->deskripsi_event,
             ]);
         }
-        return redirect()->route('event_index');
+        return redirect()->route('admin.event_index');
     }
 
     /**
@@ -112,6 +112,6 @@ class EventController extends Controller
         $Event = Event::findOrfail($id);
         Storage::delete('public/image'.$Event->gambar_event);
         $Event->delete();
-        return redirect()->route('event_index')->with('success', 'Data deleted successfully');
+        return redirect()->route('admin.event_index')->with('success', 'Data deleted successfully');
     }
 }

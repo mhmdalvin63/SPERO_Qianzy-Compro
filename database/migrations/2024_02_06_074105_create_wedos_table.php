@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('wedos', function (Blueprint $table) {
             $table->id();
             $table->text('icon_wedo');
-            $table->string('judul_wedo');
-            $table->string('deskripsi_wedo');
+            $table->text('judul_wedo');
+            $table->text('deskripsi_wedo');
             $table->timestamps();
         });
     }

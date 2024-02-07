@@ -42,7 +42,7 @@ class PartnerController extends Controller
             'gambar_partner' => $gambar_partner->hashName(),
         ]);
         // Partner::create($request->all());
-        return redirect('/partner')->with('success','Data Pemesanan Berhasil Di Tambahkan');
+        return redirect('admin/partner')->with('success','Data Pemesanan Berhasil Di Tambahkan');
     }
 
     /**
@@ -87,7 +87,7 @@ class PartnerController extends Controller
                 
             ]);
         }
-        return redirect()->route('partner_index');
+        return redirect()->route('admin.partner_index');
     }
 
     /**
@@ -98,6 +98,6 @@ class PartnerController extends Controller
         $Partner = Partner::findOrfail($id);
         Storage::delete('public/image'.$Partner->gambar_partner);
         $Partner->delete();
-        return redirect()->route('partner_index')->with('success', 'Data deleted successfully');
+        return redirect()->route('admin.partner_index')->with('success', 'Data deleted successfully');
     }
 }

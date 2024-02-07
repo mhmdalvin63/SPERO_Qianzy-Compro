@@ -45,7 +45,7 @@ class WedoController extends Controller
             'deskripsi_wedo' => $request->deskripsi_wedo,
         ]);
         // wedo::create($request->all());
-        return redirect('/wedo')->with('success','Data Pemesanan Berhasil Di Tambahkan');
+        return redirect('admin/wedo')->with('success','Data Pemesanan Berhasil Di Tambahkan');
     }
 
     /**
@@ -82,7 +82,7 @@ class WedoController extends Controller
             'judul_wedo' => $request->judul_wedo,
             'deskripsi_wedo' => $request->deskripsi_wedo,
             ]);
-        return redirect()->route('wedo_index');
+        return redirect()->route('admin.wedo_index');
     }
 
     /**
@@ -92,6 +92,6 @@ class WedoController extends Controller
     {
         $Wedo = Wedo::findOrfail($id);
         $Wedo->delete();
-        return redirect()->route('wedo_index')->with('success', 'Data deleted successfully');
+        return redirect()->route('admin.wedo_index')->with('success', 'Data deleted successfully');
     }
 }
