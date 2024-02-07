@@ -1,3 +1,7 @@
+p.sm{
+    margin-bottom: 0 !important;
+    font-size: calc(60% + .5vmin);
+}
 p{
     margin-bottom: 0 !important;
     font-size: calc(60% + .8vmin);

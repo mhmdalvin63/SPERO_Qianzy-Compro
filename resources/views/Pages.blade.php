@@ -33,7 +33,7 @@
             </ul>
         </div>
     </div>
-</nav>
+    </nav>
    {{-- ALHIR NAVBAR --}}
 
    {{-- CONTENT --}}
@@ -92,63 +92,31 @@
         <p>PT. Qianzy Kreatif Mediatama</p>
 
         <div class="row mt-5">
+            @foreach ($Wedo as $item)    
             <div class="col-xl-3 col-md-4 col-6 my-2" id="col-what-we-do">
                 <div class="content py-4 px-3">
                     <div class="content-top py-3 px-4">
-                        <img src="{{ asset('../Images/corporate.png') }}" alt="">
+                        {{-- <img src="{{ asset('../Images/corporate.png') }}" alt=""> --}}
+                        <h4>{!! $item->icon_wedo !!}</h4>
                     </div>
                     <div class="content-bottom mt-4">
-                        <p class="fw-bold">Corporate Event</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, ad.</p>
+                        <p class="fw-bold">{{ $item->judul_wedo }}</p>
+                        <p>{{ $item->deskripsi_wedo }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-md-4 col-6 my-2" id="col-what-we-do">
-                <div class="content p-4 px-3">
-                    <div class="content-top py-3 px-4">
-                        <img src="{{ asset('../Images/corporate.png') }}" alt="">
-                    </div>
-                    <div class="content-bottom mt-4">
-                        <p class="fw-bold">Corporate Event</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, ad.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-4 col-6 my-2" id="col-what-we-do">
-                <div class="content p-4 px-3">
-                    <div class="content-top py-3 px-4">
-                        <img src="{{ asset('../Images/corporate.png') }}" alt="">
-                    </div>
-                    <div class="content-bottom mt-4">
-                        <p class="fw-bold">Corporate Event</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, ad.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-4 col-6 my-2" id="col-what-we-do">
-                <div class="content p-4 px-3">
-                    <div class="content-top py-3 px-4">
-                        <img src="{{ asset('../Images/corporate.png') }}" alt="">
-                    </div>
-                    <div class="content-bottom mt-4">
-                        <p class="fw-bold">Corporate Event</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, ad.</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
    </div>
 
    <div class="list-logo p-5" id="project">
-    <div class="content justify-content-md-between justify-content-center">
-        <img src="{{ asset('../Images/dpr.png') }}" alt="">
-        <img src="{{ asset('../Images/dpr.png') }}" alt="">
-        <img src="{{ asset('../Images/dpr.png') }}" alt="">
-        <img src="{{ asset('../Images/dpr.png') }}" alt="">
-        <img src="{{ asset('../Images/dpr.png') }}" alt="">
-        <img src="{{ asset('../Images/dpr.png') }}" alt="">
-        <img src="{{ asset('../Images/dpr.png') }}" alt="">
+    <div class="row list-project container">
+        @foreach ($Partner as $item)
+            <div class="col-md-2">
+                <img src="{{asset('storage/image/'.$item->gambar_partner)}}" alt="">
+            </div>
+        @endforeach
     </div>
    </div>
 
@@ -160,60 +128,25 @@
             <a class="text-decoration-none text-black" href="">Selengkapnya >></a>
         </div>
         <div class="row justify-content-center justify-content-lg-start">
-            <div class="col-xl-4 col-md-6 col-sm-10 col-12 mt-4 event-img" id="gallery-img">
-                <div class="content position-relative">
-                    <img src="{{ asset('..\Images\event=img.png') }}" class="position-relative" alt="">
-                    <div class="event-title px-3">
-                        <p>
-                            <span class="fw-bold">Kegiatan 1</span>
-                            <br>
-                            <span>Lorem Ipsum</span>
-                        </p>
-                        <a href=""><p>Selengkapnya</p></a>
+            @foreach ($Event as $item)    
+                <div class="col-xl-4 col-md-6 col-sm-10 col-12 mt-4 event-img" id="gallery-img">
+                    <div class="content position-relative">
+                        <img src="{{asset('storage/image/'.$item->gambar_event)}}" alt="">
+                        <div class="event-title px-3">
+                            <p>
+                                <span class="fw-bold">{{ $item->judul_event }}</span>
+                                <br>
+                                <span>{{ $item->subjudul_event }}</span>
+                            </p>
+                            <a href=""><p class="sm">Selengkapnya</p></a>
+                        </div>
                     </div>
+                    {{-- <img src="{{ asset('..\Images\event=img.png') }}" class="position-relative" alt=""> --}}
                 </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-10 col-12 mt-4 event-img" id="gallery-img">
-                <div class="content position-relative">
-                    <img src="{{ asset('..\Images\event=img.png') }}" class="position-relative" alt="">
-                    <div class="event-title px-3">
-                        <p>
-                            <span class="fw-bold">Kegiatan 1</span>
-                            <br>
-                            <span>Lorem Ipsum</span>
-                        </p>
-                        <a href=""><p>Selengkapnya</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-10 col-12 mt-4 event-img" id="gallery-img">
-                <div class="content position-relative">
-                    <img src="{{ asset('..\Images\event=img.png') }}" class="position-relative" alt="">
-                    <div class="event-title px-3">
-                        <p>
-                            <span class="fw-bold">Kegiatan 1</span>
-                            <br>
-                            <span>Lorem Ipsum</span>
-                        </p>
-                        <a href=""><p>Selengkapnya</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-sm-10 col-12 mt-4 event-img" id="gallery-img">
-                <div class="content position-relative">
-                    <img src="{{ asset('..\Images\event=img.png') }}" class="position-relative" alt="">
-                    <div class="event-title px-3">
-                        <p>
-                            <span class="fw-bold">Kegiatan 1</span>
-                            <br>
-                            <span>Lorem Ipsum</span>
-                        </p>
-                        <a href=""><p>Selengkapnya</p></a>
-                    </div>
-                </div>
-            </div>
+                @endforeach
         </div>
     </div>
+
    {{-- AKHIR CONTENT --}}
 
 

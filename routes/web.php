@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\WedoController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\PartnerController;
 
 /*
@@ -51,6 +52,5 @@ Route::middleware(['auth'])->group(function () {
 });
 
 
-Route::get('/pages', function () {
-    return view('pages');
-});
+// Route::get('/', function () { return view('pages'); });
+Route::get('/',[FrontendController::class,'pagesController'])->name('pages-controller');

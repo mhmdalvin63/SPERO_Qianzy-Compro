@@ -96,10 +96,34 @@
     border-radius: 25px;
 }
 .content-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: max-content;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.content-bottom p:nth-child(1){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%; /* Atur sesuai kebutuhan */
+}
+.content-bottom p:nth-child(2){
+    max-height: calc(1.5em * 6); /* Ganti angka 4 dengan jumlah baris yang diinginkan */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Ganti angka 4 dengan jumlah baris yang diinginkan */
+    -webkit-box-orient: vertical;
+}
+
+
+.list-project img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 
@@ -119,6 +143,7 @@
     color: white;
 }
 .event-img .content img{
+    border-radius: 15px;
     filter: brightness(.5);
     width: 100%;
     height: auto;
@@ -135,6 +160,20 @@
 }
 .event-title p{
     line-height: 1;
+}
+.event-title span:nth-child(1){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%; /* Atur sesuai kebutuhan */
+}
+.event-title span:nth-child(2){
+    max-height: calc(1.5em * 2); 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
 }
 .event-title a{
     text-decoration: none;
